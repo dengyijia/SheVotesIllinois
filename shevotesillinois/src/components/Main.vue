@@ -1,4 +1,6 @@
 <template>
-    <h1>Hello World</h1>
-    <navbar></navbar>
+    <div>
+        <navbar></navbar>
+        <home></home>
+    </div>
 </template>
