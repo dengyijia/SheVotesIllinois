@@ -65,6 +65,7 @@
 
       <b-nav-item href="/blog">Our Blog</b-nav-item>
 
+
       <b-nav-item-dropdown text="Let's Connect" right>
         <b-dropdown-item href="#">Events</b-dropdown-item>
         <b-dropdown-item href="#">Partnerships</b-dropdown-item>

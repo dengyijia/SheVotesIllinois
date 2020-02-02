@@ -1,31 +1,7 @@
-
-from flask import Flask, render_template_string, redirect, jsonify
-from flask_cors import CORS
+from flask import Flask, render_template_string, redirect
 from sqlalchemy import create_engine, MetaData
 from flask_login import UserMixin, LoginManager, login_user, logout_user
 from flask_blogging import SQLAStorage, BloggingEngine
-
-
-# configuration
-DEBUG = True
-
-# instantiate the app
-app = Flask(__name__)
-app.config.from_object(__name__)
-
-# enable CORS
-CORS(app, resources={r'/*': {'origins': '*'}})
-
-
-# sanity check route
-@app.route('/ping', methods=['GET'])
-def ping_pong():
-    return jsonify('pong!')
-
-
-###############################################################
-############################ BLOG #############################
-###############################################################
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "secret"  # for WTF-forms and login
@@ -41,7 +17,7 @@ app.config["FILEUPLOAD_ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg", "gif"]
 # extensions
 # this engine is the one I used on my own laptop
 # engine = create_engine('mysql+mysqldb://dom:nematode@localhost:3306/shevotes')
-# this engine is the one running off the remotemysql.com free online MySQL database
+# this engine is the one running off the remotesql.com free online MySQL database
 engine = create_engine('mysql+mysqldb://a8tDbjjNCA:rOFbcgShRQ@remotemysql.com:3306/a8tDbjjNCA')
 meta = MetaData()
 sql_storage = SQLAStorage(engine, metadata=meta)
@@ -55,7 +31,7 @@ class User(UserMixin):
         self.id = user_id
 
     def get_name(self):
-        return "Ruth Bader Ginsburg"  # typically the user's name
+        return "Paul Dirac"  # typically the user's name
 
 @login_manager.user_loader
 @blog_engine.user_loader
@@ -96,14 +72,5 @@ def logout():
     return redirect("/")
 
 
-###############################################################
-########################## END BLOG ###########################
-###############################################################
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True, port=8000, use_reloader=True)
-=======
-
-if __name__ == '__main__':
-    app.run()
-
