@@ -42,7 +42,7 @@ app.config["FILEUPLOAD_ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg", "gif"]
 # this engine is the one I used on my own laptop
 # engine = create_engine('mysql+mysqldb://dom:nematode@localhost:3306/shevotes')
 # this engine is the one running off the remotemysql.com free online MySQL database
-engine = create_engine('mysql+mysqldb://a8tDbjjNCA:rOFbcgShRQ@remotemysql.com:3306/a8tDbjjNCA')
+engine = create_engine('mysql+mysqldb://5OYt9U79fX:slcIdrLwMQ@remotemysql.com:3306/5OYt9U79fX')
 meta = MetaData()
 sql_storage = SQLAStorage(engine, metadata=meta)
 blog_engine = BloggingEngine(app, sql_storage)
