@@ -1,10 +1,10 @@
 <template>
   <b-navbar type="light" variant="light">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">She Votes Illinois</a>
+      <a class="navbar-brand" href="/">She Votes Illinois</a>
     </div>
     <ul class="nav navbar-nav">
-      <b-nav-item href="#">Home</b-nav-item>
+      <b-nav-item href="/">Home</b-nav-item>
       <b-nav-item-dropdown text="What Can You Do?" right>
         <b-nav-item-dropdown text="Become Aware" right>
           <b-dropdown-item href="#">Why Your Vote Matters</b-dropdown-item>
@@ -63,7 +63,8 @@
           <b-dropdown-item href="#">Videos</b-dropdown-item>
       </b-nav-item-dropdown>
 
-      <b-nav-item href="#">Our Blog</b-nav-item>
+      <b-nav-item href="/blog">Our Blog</b-nav-item>
+
 
       <b-nav-item-dropdown text="Let's Connect" right>
         <b-dropdown-item href="#">Events</b-dropdown-item>
