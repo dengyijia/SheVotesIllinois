@@ -58,6 +58,7 @@
             <b-dropdown-item href="#">SVI Newsletters</b-dropdown-item>
           </b-nav-item-dropdown>
 
+          <b-dropdown-item href="/legrecap">Legislation Recap</b-dropdown-item>
           <b-dropdown-item href="#">Testimonials</b-dropdown-item>
           <b-dropdown-item href="#">Photos</b-dropdown-item>
           <b-dropdown-item href="#">Videos</b-dropdown-item>

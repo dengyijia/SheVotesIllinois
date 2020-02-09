@@ -3,6 +3,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Main from './components/Main.vue';
 import blog from './components/blogHome.vue';
+import legrecap from './components/legrecap.vue';
 import blogPosts from './assets/blog_posts.json';
 
 Vue.use(Router);
@@ -29,6 +30,11 @@ export default new Router({
       path: '/',
       name: 'Main',
       component: Main,
+    },
+    {
+      path: '/legrecap',
+      name: 'legrecap',
+      component: legrecap,
     },
     {
       path: '/blog',
