@@ -1,4 +1,5 @@
-<template>
+
+<!-- <template>
   <b-container class="container-fluid">
     <b-carousel
       background="#ababab">
@@ -8,7 +9,8 @@
           <img src="./title_image.jpg"/>
         </template>
         <h1 style="color: black">She Votes Illinois</h1>
-        <p style="color: black">Fighting for a state where all women experience justice, equity,
+        <p style="color: black"
+        class="font-weight-bold">Fighting for a state where all women experience justice, equity,
         and political representation</p>
       </b-carousel-slide>
     </b-carousel>
@@ -22,7 +24,9 @@
             policymaking.
       </template>
 
-      <b-button variant="primary" href="#">Meet our members!</b-button>
+      <v-btn
+              pill variant="info"
+              href="#">Meet our members!</v-btn>
     </b-jumbotron>
 
     <b-jumbotron>
@@ -49,7 +53,7 @@
               </b-card-text>
 
               <b-button
-              squared variant="outline-secondary"
+              pill variant="outline-info"
               href="#">Become Aware</b-button>
             </b-card>
         </b-col>
@@ -65,7 +69,7 @@
             </b-card-text>
 
             <b-button
-                squared variant="outline-secondary"
+                pill variant="outline-info"
                 href="#">Be Informed</b-button>
           </b-card>
         </b-col>
@@ -76,17 +80,17 @@
             style="max-width: 20rem;"
             class="mb-2">
             <b-card-text>
-              Support women entering into state and local politic
+              Support women entering into state and local politics
             </b-card-text>
-            <b-button
-                    squared variant="outline-secondary"
-                    href="#">Get Active</b-button>
+                <b-button
+                  pill variant="outline-info"
+                  href="#">Get Active</b-button>
           </b-card>
         </b-col>
       </b-row>
     </b-jumbotron>
     <b-jumbotron>
-      <template v-slot:header>History</template>
+      <template v-slot:header>Our History</template>
 
       <template v-slot:lead>
         She Votes Illinois was founded when a few women got together over coffee in 2017.
@@ -103,7 +107,9 @@
          to choice in healthcare.
       </p>
 
-      <b-button variant="primary" href="#">More history</b-button>
+       <b-button
+              pill variant="info"
+              href="#">More History</b-button>
     </b-jumbotron>
   </b-container>
-</template>
+</template> -->
