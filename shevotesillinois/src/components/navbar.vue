@@ -5,12 +5,12 @@
     </div>
     <ul class="nav navbar-nav">
       <b-nav-item href="/">Home</b-nav-item>
-      <b-nav-item-dropdown text="What Can You Do?" right>
-        <b-nav-item-dropdown text="Become Aware" right>
-          <b-dropdown-item href="#">Why Your Vote Matters</b-dropdown-item>
-          <b-dropdown-item href="#">How to Become a Registered Voter</b-dropdown-item>
+      <b-nav-item-dropdown text="What Can You Do?" left>
+        <b-dropdown-group id="Become Aware" header="Become Aware">
+            <b-dropdown-item href="/volunteer">Why Your Vote Matters</b-dropdown-item>
+            <b-dropdown-item href="#">How to Become a Registered Voter</b-dropdown-item>
           <b-dropdown-item href="#">Register to Vote</b-dropdown-item>
-        </b-nav-item-dropdown>
+        </b-dropdown-group>
         <b-nav-item-dropdown text="Be Informed" right>
           <b-dropdown-item href="#">Making Power Accessible</b-dropdown-item>
           <b-dropdown-item href="#">Tools and Resources</b-dropdown-item>

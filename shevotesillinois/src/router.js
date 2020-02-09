@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import Main from './components/Main.vue';
 import blog from './components/blogHome.vue';
 import blogPosts from './assets/blog_posts.json';
+import volunteer from './components/volunteer.vue';
 
 Vue.use(Router);
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/',
       name: 'Main',
       component: Main,
+    },
+    {
+      path: '/volunteer',
+      name: 'Volunteer',
+      component: volunteer,
     },
     {
       path: '/blog',
