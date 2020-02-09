@@ -1,0 +1,15 @@
+{
+	"Register to Vote in Illinois": [
+    {
+      "id": "register",
+      "title": "Illinois Voter Registration",
+      "link": "https://ova.elections.il.gov/"
+    },
+    {
+      "id": "check-registration",
+      "title": "Check Your Registration",
+      "description": "Before election day, make sure you are still registered to vote. Perhaps you have moved, changed your name, or live in a neighborhood that changed zip codes. Even if nothing has changed, it’s a good idea to check to make sure your voter registration is still active. ",
+      "link": "https://ova.elections.il.gov/RegistrationLookup.aspx"
+    }
+  ]
+}

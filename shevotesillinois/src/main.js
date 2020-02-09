@@ -9,7 +9,7 @@ import Home from './components/Home.vue';
 import navbar from './components/navbar.vue';
 import blogHome from './components/blogHome.vue';
 import blogPost from './components/blogPost.vue';
-
+import regInfo from './components/howToRegister.vue';
 
 Vue.config.productionTip = false;
 
@@ -18,6 +18,7 @@ Vue.component('home', Home);
 Vue.component('navbar', navbar);
 Vue.component('blogHome', blogHome);
 Vue.component('blogPost', blogPost);
+Vue.component('regInfo', regInfo);
 
 new Vue({
   router,

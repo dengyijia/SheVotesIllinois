@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import Main from './components/Main.vue';
 import blog from './components/blogHome.vue';
 import blogPosts from './assets/blog_posts.json';
+import regInfo from './components/howToRegister.vue';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/blog',
       name: 'Blog',
       component: blog,
+    },
+    {
+      path: '/registrationInfo',
+      name: 'Voter Registration Info',
+      component: regInfo,
     },
     ...blogRoutes,
   ],
