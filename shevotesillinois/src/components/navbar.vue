@@ -75,9 +75,13 @@
         Snapchat and YouTube</b-dropdown-item>
         <b-dropdown-item href="#">Mailing address & Phone Number</b-dropdown-item>
       </b-nav-item-dropdown>
-
-      <b-button type="submit"
-      href="https://secure.actblue.com/donate/shevotesil" target="_blank" variant="danger">DONATE</b-button>
     </ul>
+    <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <b-nav-form>
+          <b-button type="submit"
+      href="https://secure.actblue.com/donate/shevotesil" target="_blank" variant="info">DONATE</b-button>
+        </b-nav-form>
+      </b-navbar-nav>
   </b-navbar>
 </template>
