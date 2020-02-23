@@ -5,6 +5,7 @@ import Main from './components/Main.vue';
 import blog from './components/blogHome.vue';
 import blogPosts from './assets/blog_posts.json';
 import regInfo from './components/howToRegister.vue';
+import plan from './components/planToVote.vue';
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/registrationInfo',
       name: 'Voter Registration Info',
       component: regInfo,
+    },
+    {
+      path: '/planToVote',
+      name: 'Making Your Plan to Vote',
+      component: plan,
     },
     ...blogRoutes,
   ],

@@ -9,17 +9,17 @@
         <b-nav-item-dropdown text="Become Aware" right>
           <b-dropdown-item href="#">Why Your Vote Matters</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-dropdown-item href="/registrationInfo">Voter Registration Info</b-dropdown-item>
+        <b-dropdown-item href="/registrationInfo">Become a Registered Voter</b-dropdown-item>
         <b-dropdown-item href="https://ova.elections.il.gov/">Register to Vote</b-dropdown-item>
         <b-nav-item-dropdown text="Be Informed" right>
           <b-dropdown-item href="#">Making Power Accessible</b-dropdown-item>
           <b-dropdown-item href="#">Tools and Resources</b-dropdown-item>
-          <b-dropdown-item href="#">Making Your Plan to Vote</b-dropdown-item>
           <b-dropdown-item href="#">Go Vote</b-dropdown-item>
             <b-nav-item-dropdown text="Guides" right>
               <b-dropdown-item href="#">Canvassing</b-dropdown-item>
             </b-nav-item-dropdown>
         </b-nav-item-dropdown>
+        <b-dropdown-item href="/planToVote">Making Your Plan to Vote</b-dropdown-item>
         <b-nav-item-dropdown text="Get Active" right>
           <b-nav-item-dropdown text="Build Your Community/Expand Your Power" right>
             <b-nav-item-dropdown text="How?" right>

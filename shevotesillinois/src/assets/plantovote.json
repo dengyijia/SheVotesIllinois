@@ -1,0 +1,60 @@
+{
+    "Making Your Plan to Vote": [
+      {
+        "id": "section-data",
+        "sectiontext": "Make a plan to vote. The more organized you are, the more likely you are to vote.",
+        "sectionis": "b-jumbotron",
+        "text": ""
+      },
+      {
+        "id": "bullet",
+        "text": "How are you getting there? "
+      },
+      {
+        "id": "bullet",
+        "text": "Who is taking care of the kids?"
+      },
+      {
+        "id": "bullet",
+        "text": "When are you going? – Make sure you know when the polls are open, note that certain times of day might have longer wait lines at the polls, coordinate with your co-workers and family members as necessary. Set a reminder on your calendar."
+      },
+      {
+          "id": "bullet",
+          "text": "Do you need an ID to vote?",
+          "link": "https://chicagoelections.gov/en/when-you-need-id-to-vote.html"
+      },
+      {
+          "id": "bullet",
+          "text": "How are you voting?",
+          "sublist": [
+              {
+                  "id": "1",
+                  "linktext": "Early voting",                  
+                  "link": "https://elections.il.gov/VotingAndRegistrationSystems/EarlyVotingLocationsSearch.aspx?MID=A3RIOjKplz4%3d&T=637152869881454503"
+              },
+              {
+                  "id": "2",
+                  "linktext": "By Mail",
+                  "text": " – All registered voters may vote by mail. No reason or excuse is needed to vote by mail. ",
+                  "link": "https://www.elections.il.gov/ElectionOperations/VotingByMailAgreement.aspx"
+              },
+              {
+                  "id": "3",
+                  "linktext": "In-person",
+                  "text": " – check your address for polling locations on election day.",
+                  "link": "https://ova.elections.il.gov/PollingPlaceLookup.aspx"
+              },
+              {
+                  "id": "4",
+                  "linktext": "Provisional Ballot",
+                  "text": "– Don’t be turned away at the polls. If your voting eligibility is challenged, request a provisional ballot.  Read here for more information about provisional ballots and your rights.",
+                  "link": "https://www.elections.il.gov/downloads/electioninformation/pdf/provvotingil.pdf"
+              }
+          ]
+      },
+      {
+          "id": "bullet",
+          "text": "How are you going to communicate with your friends, family, and co-workers that you have voted and encourage them to vote too?"
+      }
+    ]
+  }

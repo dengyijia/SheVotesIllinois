@@ -12,12 +12,18 @@
           <template class="lg" v-slot:lead>
             {{entries[section][0].sectiontext}}
           </template>
-          <div class="btn-group" v-for="entry in entries[section]" :key="entry.id">
-            <div v-if="entry.id === 'button'">
-                <b-button class="btn-lg" variant="primary" :href=entry.link>
-                  {{entry.title}}</b-button>
+          <ul v-for="entry in entries[section]" :key="entry.id">
+            <div v-if="entry.id === 'bullet'">
+              <div class="entry">
+                <li>
+                    <a :href=entry.link>{{entry.text}}</a>
+                    <ul v-for="sub in entry.sublist" :key="sub.id">
+                        <li><a :href=sub.link>{{sub.linktext}}</a>{{sub.text}}</li>
+                    </ul>
+                </li>
+              </div>
             </div>
-          </div>
+          </ul>
         </component>
       </div>
     </div>
@@ -25,7 +31,7 @@
 </template>
 
 <script>
-import COMPONENTS from '@/assets/voteinfo_howto.json';
+import COMPONENTS from '@/assets/plantovote.json';
 
 export default {
   name: 'home',
@@ -38,11 +44,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 a {
-  color: #FFFFFF;
-}
-btn-lg{
-  color: #0000FF;
-  display: inline-block;
+  color: #2fd0d0;
 }
 div {
   padding-right: 5px;
