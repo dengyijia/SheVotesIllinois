@@ -413,6 +413,7 @@ template {
     min-width: 992px !important;
   }
   .navbar {
+    height:100px;
     display: none;
   }
   .badge {
@@ -4082,6 +4083,7 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  height:300px;
 }
 
 .nav-link {

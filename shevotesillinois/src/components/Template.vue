@@ -298,7 +298,36 @@
 <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
 <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
 <script type="text/javascript">
+/* eslint-disable */
   export default {
+    mounted() {
+      var ckeditor = document.createElement("script");
+      ckeditor.setAtrribute('src', "../assets/js/core/jquery.min.js");
+      document.head.appendChild(ckeditor);
 
+      let ckeditor1 = document.createElement("script");
+      ckeditor1.setAtrribute('src', "../assets/js/core/popper.min.js");
+      document.head.appendChild(ckeditor1);
+
+      let ckeditor2 = document.createElement("script");
+      ckeditor2.setAtrribute('src', "../assets/js/core/bootstrap-material-design.min.js");
+      document.head.appendChild(ckeditor2);
+
+      let ckeditor3 = document.createElement("script");
+      ckeditor3.setAtrribute('src', "../assets/js/plugins/moment.min.js");
+      document.head.appendChild(ckeditor3);
+
+      let ckeditor4 = document.createElement("script");
+      ckeditor4.setAtrribute('src', "../assets/js/plugins/bootstrap-datetimepicker.js");
+      document.head.appendChild(ckeditor4);
+
+      let ckeditor5 = document.createElement("script");
+      ckeditor5.setAtrribute('src', "../assets/js/plugins/nouislider.min.js");
+      document.head.appendChild(ckeditor5);
+
+      let ckeditor6 = document.createElement("script");
+      ckeditor4.setAtrribute('src', "../assets/js/material-kit.js?v=2.0.6");
+      document.head.appendChild(ckeditor6);
+    }
   }
 </script>
