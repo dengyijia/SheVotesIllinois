@@ -12,15 +12,41 @@
       <p>If you have a skill not listed below and want to be a part of our volunteer team or are interested in becoming part of our <a rel="noreferrer noopener" href="#" target="_blank">Board of Directors or Advisory Council</a>, we’d love to talk to you!
       </p>
       <!--eslint-disable-next-line-->
-      <p>Contact us at info@shevotesil.org for more details and to be a part of our movement! All are welcome!!!
+      <p>Contact us at <a href="mailto:info@shevotesil.org">info@shevotesil.org</a> for more details and to be a part of our movement! All are welcome!!!
       </p>
     </div>
-    <h2 class="center">Positions</h2>
+    <br>
+    <h2 class="center">Open Positions</h2>
+    <br>
     <div class="sections">
+      <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
+        <div class="section" v-for="entry in entries[section]" :key="entry.id">
+          <div class="entry">
+            <h3>
+              {{entry.title}}
+              <span class="subtitle">{{entry.date}}</span>
+            </h3>
+            <p>{{entry.description}}</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 </template>
+
+<script>
+import POSITIONS from '@/assets/open_positions.json';
+
+export default {
+  name: 'home',
+  computed: {
+    entries() {
+      return POSITIONS;
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
   .center {
@@ -45,12 +71,8 @@
   }
 
   h3 {
-    color: #2fd0d0;
+    color: #35495e;
     margin-bottom: 0;
-    cursor: pointer;
-    &:hover {
-      text-decoration: underline;
-    }
     .subtitle {
       color: grey;
       font-size: .98rem;
