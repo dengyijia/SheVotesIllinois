@@ -1,40 +1,21 @@
 <template>
-  <div class="home">
+  <div class="blog">
     <navbar></navbar>
     <br>
     <img alt="Vue logo" src="../assets/logo.png">
     <h1 class="center">She Blogs</h1>
     <h2 class="center">A Blog for She Votes Illinois</h2>
-    <div class="sections">
-      <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <h2 class="center">{{section}}</h2>
-        <div class="section" v-for="entry in entries[section]" :key="entry.id">
-          <div class="entry">
-            <h3 @click="$router.push({name: entry.id})">
-              {{entry.title}}
-              <span class="subtitle">{{entry.date}}</span>
-            </h3>
-            <p>{{entry.description}}</p>
-          </div>
-        </div>
-      </div>
+    <div class="body">
+      <router-view />
     </div>
   </div>
 </template>
 
-<script>
-import BLOGENTRIES from '@/assets/blog_posts.json';
-
-export default {
-  name: 'home',
-  computed: {
-    entries() {
-      return BLOGENTRIES;
-    },
-  },
-};
-</script>
 <style lang="scss" scoped>
+.body{
+  text-align: left;
+  margin: 5em 20em;
+}
 .center {
   text-align: center;
 }
