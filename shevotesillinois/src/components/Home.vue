@@ -1,5 +1,5 @@
 <template>
-  <b-container class="container-fluid">
+  <b-container>
     <b-carousel
       background="#ababab">
       <!-- Text slides with image -->
@@ -13,7 +13,7 @@
       </b-carousel-slide>
     </b-carousel>
 
-    <b-jumbotron>
+    <b-jumbotron bg-variant="transparent">
       <template v-slot:header>Who we are</template>
 
       <template v-slot:lead>
@@ -22,11 +22,11 @@
             policymaking.
       </template>
 
-      <b-button variant="primary" href="#">Meet our members!</b-button>
+      <b-button variant="info" href="#">Meet our members!</b-button>
     </b-jumbotron>
 
-    <b-jumbotron>
-      <template v-slot:header>What we do</template>
+    <b-jumbotron bg-variant="light">
+      <template v-slot:header><b-col align-self="end">What we do</b-col></template>
 
       <template v-slot:lead>
         Our work focuses on three things: voting, education,
@@ -43,13 +43,13 @@
               title="Voting"
               tag="article"
               style="max-width: 20rem;"
-              class="mb-2">
+              class="mb-2 border-0">
               <b-card-text>
                   Make sure all women can vote in every state and local election
               </b-card-text>
 
               <b-button
-              squared variant="outline-secondary"
+              squared variant="outline-info"
               href="#">Become Aware</b-button>
             </b-card>
         </b-col>
@@ -58,14 +58,14 @@
             title="Education"
             tag="article"
             style="max-width: 20rem;"
-            class="mb-2">
+            class="mb-2 border-0">
             <b-card-text>
               Ensure our elected officials and candidates for office understand
               the issues most important to Illinois women
             </b-card-text>
 
             <b-button
-                squared variant="outline-secondary"
+                squared variant="outline-info"
                 href="#">Be Informed</b-button>
           </b-card>
         </b-col>
@@ -74,18 +74,18 @@
             title="Engagement"
             tag="article"
             style="max-width: 20rem;"
-            class="mb-2">
+            class="mb-2 border-0">
             <b-card-text>
               Support women entering into state and local politic
             </b-card-text>
             <b-button
-                    squared variant="outline-secondary"
+                    squared variant="outline-info"
                     href="#">Get Active</b-button>
           </b-card>
         </b-col>
       </b-row>
     </b-jumbotron>
-    <b-jumbotron>
+    <b-jumbotron bg-variant="transparent">
       <template v-slot:header>History</template>
 
       <template v-slot:lead>
@@ -103,7 +103,7 @@
          to choice in healthcare.
       </p>
 
-      <b-button variant="primary" href="#">More history</b-button>
+      <b-button variant="info" href="#">More history</b-button>
     </b-jumbotron>
   </b-container>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <b-navbar type="light" variant="light">
+  <b-navbar type="light" variant="light" sticky=true fixed="top">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">She Votes Illinois</a>
     </div>
@@ -75,8 +75,13 @@
         Snapchat and YouTube</b-dropdown-item>
         <b-dropdown-item href="#">Mailing address & Phone Number</b-dropdown-item>
       </b-nav-item-dropdown>
-
-      <b-nav-item href="#">DONATE</b-nav-item>
     </ul>
+    <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <b-nav-form>
+          <b-button type="submit"
+      href="https://secure.actblue.com/donate/shevotesil" target="_blank" variant="info">DONATE</b-button>
+        </b-nav-form>
+      </b-navbar-nav>
   </b-navbar>
 </template>
