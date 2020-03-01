@@ -24,7 +24,7 @@ const blogRoutes = Object.keys(blogPosts).map((section) => {
 });
 
 const legRoutes = Object.keys(legPosts).map((section) => {
-  const children = blogPosts[section].map(child => ({
+  const children = legPosts[section].map(child => ({
     path: child.id,
     name: child.id,
     component: () => import(`./assets/blog_posts/${section}/${child.id}.md`),
