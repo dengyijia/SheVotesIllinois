@@ -11,4 +11,7 @@ module.exports = {
         raw: true,
       });
   },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/SheVotesIllinois/'
+    : '/SheVotesIllinois/'
 };

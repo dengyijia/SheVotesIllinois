@@ -1,10 +1,11 @@
 <template>
-  <b-navbar type="light" variant="light" sticky=true fixed="top">
+  <b-navbar variant="light" sticky="true" fixed="top">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">She Votes Illinois</a>
+      <a class="navbar-brand" href="/">
+        <img src="../assets/logo.png" width="100">
+      </a>
     </div>
     <ul class="nav navbar-nav">
-      <b-nav-item href="/">Home</b-nav-item>
       <b-nav-item-dropdown text="What Can You Do?" right>
         <b-nav-item-dropdown text="Become Aware" right>
           <b-dropdown-item href="#">Why Your Vote Matters</b-dropdown-item>
@@ -78,6 +79,7 @@
     </ul>
     <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
+        <b-nav-item></b-nav-item>
         <b-nav-form>
           <b-button type="submit"
       href="https://secure.actblue.com/donate/shevotesil" target="_blank" variant="info">DONATE</b-button>
