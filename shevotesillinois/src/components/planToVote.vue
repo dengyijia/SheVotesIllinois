@@ -15,7 +15,7 @@
           <ul v-for="entry in entries[section]" :key="entry.id">
             <div v-if="entry.id === 'bullet'">
               <div class="entry">
-                <li>
+                <li style="font-size:20px">
                     <a :href=entry.link>{{entry.text}}</a>
                     <ul class="lg" v-for="sub in entry.sublist" :key="sub.id">
                         <li><a :href=sub.link>{{sub.linktext}}</a>{{sub.text}}</li>
