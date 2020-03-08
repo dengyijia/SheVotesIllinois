@@ -11,6 +11,7 @@ import legrecap from './components/legrecap.vue';
 import blogHome from './components/blogHome.vue';
 import blogPost from './components/blogPost.vue';
 
+
 Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
