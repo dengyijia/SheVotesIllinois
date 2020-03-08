@@ -17,7 +17,7 @@
               <div class="entry">
                 <li>
                     <a :href=entry.link>{{entry.text}}</a>
-                    <ul v-for="sub in entry.sublist" :key="sub.id">
+                    <ul class="lg" v-for="sub in entry.sublist" :key="sub.id">
                         <li><a :href=sub.link>{{sub.linktext}}</a>{{sub.text}}</li>
                     </ul>
                 </li>
