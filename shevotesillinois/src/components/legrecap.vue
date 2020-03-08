@@ -37,16 +37,12 @@
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
         <h2 class="center">{{section}}</h2>
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
-          <button id="billBtn" variant="primary" >{{entry.title}}</button>
-          <!-- The Modal -->
-          <div id="billBtn" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
-             </div>
-          </div>
+          <b-button id="billBtn" v-b-modal=entry.id ref="btnShow" variant="primary">
+            {{entry.title}}
+          </b-button>
+          <b-modal :id=entry.id :title=entry.title>
+            <p class="my-4">{{entry.description}}</p>
+          </b-modal>
         </div>
       </div>
     </b-jumbotron>
