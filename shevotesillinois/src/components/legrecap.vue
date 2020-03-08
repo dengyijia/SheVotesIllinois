@@ -34,6 +34,21 @@
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
+      <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
+        <h2 class="center">{{section}}</h2>
+        <div class="section" v-for="entry in entries[section]" :key="entry.id">
+          <button id="billBtn" variant="primary" >{{entry.title}}</button>
+          <!-- The Modal -->
+          <div id="billBtn" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Some text in the Modal..</p>
+             </div>
+          </div>
+        </div>
+      </div>
     </b-jumbotron>
 
     <b-jumbotron>
@@ -119,3 +134,16 @@
   </b-container>
   </div>
 </template>
+
+<script>
+import LEGENTRIES from '@/assets/legislation_recap.json';
+
+export default {
+  name: 'home',
+  computed: {
+    entries() {
+      return LEGENTRIES;
+    },
+  },
+};
+</script>
