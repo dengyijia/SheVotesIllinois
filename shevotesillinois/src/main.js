@@ -17,6 +17,7 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.component('home', Home);
 Vue.component('navbar', navbar);
+Vue.component('legrecap', legrecap);
 Vue.component('blogHome', blogHome);
 Vue.component('blogPost', blogPost);
 
