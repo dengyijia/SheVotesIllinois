@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-      <navbar></navbar>
-      <b-container class="container-fluid">
+  <b-container class="container-fluid">
+    <navbar></navbar>
     <b-carousel
       background="#ababab">
       <!-- Text slides with image -->
