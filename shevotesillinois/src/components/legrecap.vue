@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-  <b-container class="container-fluid">
-    <navbar></navbar>
+      <navbar></navbar>
+      <b-container class="container-fluid">
     <b-carousel
       background="#ababab">
       <!-- Text slides with image -->
@@ -21,6 +21,21 @@
       <template v-slot:lead>
         These bills became law in the 2019 spring session due to your hard work and advocacy.
       </template>
+
+<template>
+  <div>
+    <span
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+    >
+      <b-button
+                    squared variant="outline-secondary"
+                    href="#">Reproductive Health Act<img src="./title_image.jpg" /></b-button>
+    </span>
+      <!--eslint-disable-next-line-->
+    <span v-if="hover"><b-button variant="warning" href="#">Reproductive Health Act</b-button></span>
+  </div>
+</template>
 
       <!--eslint-disable-next-line-->
       <b-button variant="warning" href="./hb3394.vue"> Yeet<img src="./title_image.jpg" /> </b-button>
@@ -119,3 +134,12 @@
   </b-container>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      hover: false,
+    };
+  },
+};
+</script>
