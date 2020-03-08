@@ -32,6 +32,7 @@ const legRoutes = Object.keys(legPosts).map((section) => {
   return {
     path: `/${section}`,
     name: section,
+    // figure out how to change component
     component: () => import('./components/blogPost.vue'),
     children,
   };
