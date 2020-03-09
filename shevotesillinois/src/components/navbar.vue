@@ -16,38 +16,42 @@ export default {
    data: function() {
     return {
     //Menu items definition
-    menuItems:  [
-    {
-        text: 'Home',
-    },
-    {
-        text: 'Get Active',
-    },
-    {
-        text: 'Become Aware',
-        items: [
+      menuItems:  
+      [
+        {
+          text: 'Home',
+        },
+        {
+          text: 'Get Active',
+        },
+        {
+          text: 'Become Aware',
+          items: 
+          [
             { text: 'Submenu' ,
-              items: [
-                  { text: 'Become Aware 1' },
-                  { text: 'Become Aware 2' }
+              items: 
+              [
+                { text: 'Become Aware 1' },
+                { text: 'Become Aware 2' }
               ]
             },
             { text: 'Sidebar' }
-        ]
-    },
-    {
-        text: 'Be Informed',
-        items: [
+          ]
+        },
+        {
+          text: 'Be Informed',
+          items: 
+          [
             { text: 'Spelling & Grammar' },
             { text: 'Customize' },
             { text: 'Options' }
-        ]
-    },
-    { text: 'Go' },
-    { text: 'Help' }
-    ]
+          ]
+        },
+        { text: 'Go' },
+        { text: 'Help' }
+      ]
     };
-    }
+  }
 }
 </script>
 
@@ -57,7 +61,7 @@ export default {
 @import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
 
 body {
-    margin-top: 100px;
-    text-align: center;
+  margin-top: 100px;
+  text-align: center;
 }
 </style>
