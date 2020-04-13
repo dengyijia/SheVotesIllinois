@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@syncfusion/ej2-vue-grids": "^17.4.51",
+    "@syncfusion/ej2-vue-navigations": "^18.1.43",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
     "core-js": "^3.3.2",
