@@ -50,15 +50,16 @@ export default {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 2rem;
   }
   .lightbox img {
     margin: auto;
-    width: 100%;
+    width: 300%;
     grid-column-start: 2;
   }
   .lightbox-info {
+    grid-column-start: 5;
     margin: auto 2rem auto 0;
     height: 700px;
     width: 800px;
