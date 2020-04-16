@@ -15,7 +15,7 @@ To take a look of the current frontend on your local server, run "npm install" u
 
 * Volunteer page
 
-* Newsletter page: Basic functionality -- listing current posts
+* Newsletter page (blog): Basic functionality -- listing current posts
 
 * Our Team page: Clickable photos that give information about SVI personnel
 
@@ -57,7 +57,7 @@ The --fix option is to fix any lint errors that might be caused by your editor's
 5. With both npm running and flask, the website is up with its full interactivity. Open the link Flask gives you from running app.py to add and edit blog/event entries (see blog entries below). Open the link npm gives you to see the client facing side of the website. 
 
 
-### Adding and Editing Blog Posts 
+### Adding and Editing Blog Posts (To act as Newsletter/Events page)
 
 1) First, open the link flask gives you to open the link to the server site. It should be something along the lines of http://127.0.0.1:8000/ if not exactly that. 
 
