@@ -17,7 +17,7 @@ To take a look of the current frontend on your local server, run "npm install" u
 
 * Newsletter page: Basic functionality -- listing current posts
 
-* Who We Are page: Clickable photos that give information about SVI personnel
+* Our Team page: Clickable photos that give information about SVI personnel
 
 * Legislation Recap
 
