@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <navbar></navbar>
     <br>
     <img alt="Vue logo" src="../assets/logo.png">
     <h1 class="center">She Blogs</h1>

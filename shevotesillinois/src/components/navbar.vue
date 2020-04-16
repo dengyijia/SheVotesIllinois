@@ -20,35 +20,101 @@ export default {
       [
         {
           text: 'Home',
+          url: '/'
         },
         {
-          text: 'Get Active',
-        },
-        {
-          text: 'Become Aware',
+          text: 'What Can You Do?',
           items: 
           [
-            { text: 'Submenu' ,
+            { text: 'Become Aware' ,
               items: 
               [
-                { text: 'Become Aware 1' },
-                { text: 'Become Aware 2' }
+                { text: 'Why Your Vote Matters' },
+                { text: 'How to Become a Registered Voter' },
+                { text: 'Register to Vote' }
               ]
             },
-            { text: 'Sidebar' }
+            { text: 'Be Informed' ,
+              items: 
+              [
+                { text: 'Making Power Accessible' },
+                { text: 'Tools and Resources' },
+                { text: 'Making Your Plan to Vote' },
+                { text: 'Go Vote' },
+                { text: 'Guides',
+                  items:
+                  [
+                    {text: 'Canvassing'}
+                  ] 
+                }
+              ]
+            },
+            { text: 'Get Active' ,
+              items: 
+              [
+                { text: 'Build Your Community/Expand Your Power' ,
+                  items:
+                  [
+                    { text: 'How?',
+                      items:
+                      [
+                        { text: 'Tell your friends' },
+                        { text: 'Volunteer' ,
+                          url: '/volunteer'}
+
+                      ]
+                    }
+                  ] 
+                },
+                { text: 'Student Rep Program' },
+                { text: 'Current Initiatives',
+                  items:
+                  [
+                    { text: 'Water for all ordinance' },
+                    { text: 'UN CEDAW' },
+                    { text: 'Legislation' }
+                  ]
+                },
+                { text: 'Go Vote' },
+                { text: 'Guides',
+                  items:
+                  [
+                    {text: 'Canvassing'}
+                  ] 
+                },
+              ]
+            }
           ]
         },
         {
-          text: 'Be Informed',
+          text: 'About Us',
           items: 
           [
-            { text: 'Spelling & Grammar' },
-            { text: 'Customize' },
-            { text: 'Options' }
+            { text: 'Mission History' },
+            { text: 'Our Team' ,
+              url: '/whoweare'
+            },
+            { text: 'Our Impact',
+              items:
+              [
+                { text: 'Work we\'ve done to date' },
+                { text: 'Legislation passed' }
+              ] 
+            },
+            { text: 'News' ,
+              items:
+              [
+                { text: 'Articles & Features' ,
+                  url: '/blog'
+                },
+                { text: 'SVI Newsletters' }
+              ]
+            },
+            { text: 'Testimonials'},
+            { text: 'Photos'},
+            { text: 'Videos'}
           ]
         },
-        { text: 'Go' },
-        { text: 'Help' }
       ]
     };
   }
