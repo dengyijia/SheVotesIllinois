@@ -40,7 +40,16 @@ Then
 The --fix option is to fix any lint errors that might be caused by your editor's formatting if you open the files and edit them. Always run with this option.
 
 
-With both npm running and flask, the website is up with its full interactivity.
+5. With both npm running and flask, the website is up with its full interactivity. Open the link Flask gives you from running app.py to add and edit blog/event entries (see blog entries below). Open the link npm gives you to see the client facing side of the website. 
+
+
+### Adding and Editing Blog Posts 
+
+1) First, open the link flask gives you to open the link to the server site. It should be something along the lines of http://127.0.0.1:8000/ if not exactly that. 
+
+2) Then, in the top left corner, click "Login". This should take you the Blog Posts page. Click a post to view its contents and edit it, or "New" to create a new post.
+
+3) More functionality to this feature coming soon.
 
 
 
