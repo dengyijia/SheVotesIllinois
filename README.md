@@ -9,7 +9,7 @@ We are using Vue.js on the frontend and flask on the backend. The frontend files
 To take a look of the current frontend on your local server, run "npm install" under shevotesillinois, and run "npm run serve". To run the backend, enter "run app.py" in the server directory.
 
 
-## Functionality Implemented (No features final - basic work done):
+## Functionality Implemented (All Features Work in Progress):
 
 * Working navbar holding site map
 
