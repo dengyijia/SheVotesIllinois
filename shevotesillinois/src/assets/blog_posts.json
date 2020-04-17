@@ -1,18 +1,1 @@
-{
-  "2019": [
-    {
-      "id": "first-post",
-      "date": "March 10, 2019",
-      "title": "Creating a blog",
-      "description": "Nice and simple. More features on the way!"
-    }
-  ],
-  "2018": [
-    {
-      "id": "second-post",
-      "date": "April 21, 2018",
-      "title": "Another post!",
-      "description": "How can we inspire people to vote?"
-    }
-  ]
-}
+{"2020": [{"id": "2", "date": "February 25, 2020", "title": "Office Hours"}]}

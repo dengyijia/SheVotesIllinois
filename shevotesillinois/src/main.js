@@ -10,6 +10,7 @@ import navbar from './components/navbar.vue';
 import legrecap from './components/legrecap.vue';
 import blogHome from './components/blogHome.vue';
 import blogPost from './components/blogPost.vue';
+import volunteer from './components/volunteer.vue';
 
 
 Vue.config.productionTip = false;
@@ -20,6 +21,7 @@ Vue.component('navbar', navbar);
 Vue.component('legrecap', legrecap);
 Vue.component('blogHome', blogHome);
 Vue.component('blogPost', blogPost);
+Vue.component('volunteer', volunteer);
 
 new Vue({
   router,

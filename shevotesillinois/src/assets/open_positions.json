@@ -1,0 +1,22 @@
+{
+  "positions": [
+    {
+      "id": "designer",
+      "date": "March 10, 2019",
+      "title": "Graphic Designer / Artist",
+      "description": "The intersection of arts and political activism are two fields defined by a shared focus of creating engagement that shifts boundaries and changes perceptions. She Votes Illinois is looking for a volunteer to create artwork for our social media channels, campaigns and events that will activate, educate and empower the residents of Illinois. Design communications such as event programs, sponsorship packages, and other materials that help visually communicate with our partners, community, and residents of Illinois."
+    },
+    {
+      "id": "videographer",
+      "date": "March 10, 2019",
+      "title": "Videographer",
+      "description": "She Votes Illinois is a statewide political action committee who focuses on voting, education, and getting more women involved in politics. As residents in Illinois are unable to physically attend all of our events, it is important to us that we are accessible to all. One way to do that is through videography. We have various needs for videography such as interviewing legislators, creating campaign content, documenting events, and more. Help us send our message to all Illinoisans."
+    },
+    {
+      "id": "photographer",
+      "date": "March 10, 2019",
+      "title": "Photographer",
+      "description": "A picture says a thousand words. Capturing our action through photography is a compelling way to tell our story and reach our audience. We are looking for local photographers throughout the state of Illinois who will volunteer their time to capture events, rallies and other She Votes Illinois functions through the lens of the art of photography."
+    }
+  ]
+}
