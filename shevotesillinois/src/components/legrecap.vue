@@ -30,15 +30,15 @@
     >
       <b-button
                     squared variant="outline-secondary"
-                    href="#">Reproductive Health Act<img src="./title_image.jpg" /></b-button>
+                    href="#">First test button<img src="./title_image.jpg" /></b-button>
     </span>
       <!--eslint-disable-next-line-->
-    <span v-if="hover"><b-button variant="warning" href="#">Reproductive Health Act</b-button></span>
+    <span v-if="hover"><b-button variant="warning" href="#">Test</b-button></span>
   </div>
 </template>
 
       <!--eslint-disable-next-line-->
-      <b-button variant="warning" href="./hb3394.vue"> Yeet<img src="./title_image.jpg" /> </b-button>
+      <button id="reproductivehealth" href=""> <img src="./title_image.jpg" /> </button>
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
@@ -49,91 +49,18 @@
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
       <b-button variant="primary" href="#">Reproductive Health Act</b-button>
-    </b-jumbotron>
-
-    <b-jumbotron>
-      <template v-slot:header>What we do</template>
-
-      <template v-slot:lead>
-        Our work focuses on three things: voting, education,
-        and getting more women involved in politics. We are a grassroots team of
-        Illinois women working to engage a new wave of voters, community members,
-        activists, and politicians.
-      </template>
-
-      <hr class="my-4">
-
-      <b-row center>
-        <b-col>
-          <b-card
-              title="Voting"
-              tag="article"
-              style="max-width: 20rem;"
-              class="mb-2">
-              <b-card-text>
-                  Make sure all women can vote in every state and local election
-              </b-card-text>
-
-              <b-button
-              squared variant="outline-secondary"
-              href="#">Become Aware</b-button>
-            </b-card>
-        </b-col>
-        <b-col>
-          <b-card
-            title="Education"
-            tag="article"
-            style="max-width: 20rem;"
-            class="mb-2">
-            <b-card-text>
-              Ensure our elected officials and candidates for office understand
-              the issues most important to Illinois women
-            </b-card-text>
-
-            <b-button
-                squared variant="outline-secondary"
-                href="#">Be Informed</b-button>
-          </b-card>
-        </b-col>
-        <b-col>
-          <b-card
-            title="Engagement"
-            tag="article"
-            style="max-width: 20rem;"
-            class="mb-2">
-            <b-card-text>
-              Support women entering into state and local politic
-            </b-card-text>
-            <b-button
-                    squared variant="outline-secondary"
-                    href="#">Get Active</b-button>
-          </b-card>
-        </b-col>
-      </b-row>
-    </b-jumbotron>
-    <b-jumbotron>
-      <template v-slot:header>History</template>
-
-      <template v-slot:lead>
-        She Votes Illinois was founded when a few women got together over coffee in 2017.
-        We were disappointed that there were no women running for governor of
-        Illinois—especially since Illinois has never had a woman serve as governor.
-      </template>
-
-      <hr class="my-4">
-
-      <p>
-        More than 500 people attended our inaugural event, where we questioned and
-         challenged the candidates on the record on a wide range of issues that
-         included violence against women, equal pay for equal work, and access
-         to choice in healthcare.
-      </p>
-
-      <b-button variant="primary" href="#">More history</b-button>
     </b-jumbotron>
   </b-container>
   </div>
 </template>
+<style>
+#reproductivehealth:hover {
+  background-color: yellow;
+}
+#reproductivehealth {
+  background-color: green;
+}
+</style>
 <script>
 export default {
   data() {
