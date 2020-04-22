@@ -69,7 +69,9 @@ export default {
                   [
                     { text: 'Water for all ordinance' },
                     { text: 'UN CEDAW' },
-                    { text: 'Legislation' }
+                    { text: 'Legislation',
+                      url: '/legrecap'
+                    }
                   ]
                 },
                 { text: 'Go Vote' },
@@ -95,7 +97,9 @@ export default {
               items:
               [
                 { text: 'Work we\'ve done to date' },
-                { text: 'Legislation passed' }
+                { text: 'Legislation passed',
+                  url: '/legrecap'
+                }
               ] 
             },
             { text: 'News' ,
