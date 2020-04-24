@@ -42,6 +42,7 @@
           </b-button>
           <b-modal :id=entry.id :title=entry.title>
             <p class="my-4">{{entry.description}}</p>
+            <p class="my-4">For more information, click <a :href="entry.link">here</a></p>
           </b-modal>
         </div>
       </div>
