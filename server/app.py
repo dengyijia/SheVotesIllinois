@@ -4,6 +4,7 @@ from flask_cors import CORS
 from sqlalchemy import create_engine, MetaData
 from flask_login import UserMixin, LoginManager, login_user, logout_user
 from flask_blogging import SQLAStorage, BloggingEngine
+import json, datetime
 
 
 # configuration
@@ -95,10 +96,54 @@ def logout():
     logout_user()
     return redirect("/")
 
+"""
+print(sql_storage.get_posts())
+
+[{'post_id': 4, 'title': 'SVI Going Rogue', 'text': 'A small project team at the **university of chicago** has gone rogue and is operating without oversight from the IOP. More at 11.', 
+                'post_date': datetime.datetime(2020, 4, 24, 23, 31, 19), 'last_modified_date': datetime.datetime(2020, 4, 24, 23, 31, 19), 
+                'draft': 0, 'user_id': 'testuser', 'tags': ['TAGS', 'AND', 'SOME', 'MORE']}, 
+{'post_id': 3, 'title': 'Should Look Like a Title', 'text': 'Body text and more and more body text', 
+                'post_date': datetime.datetime(2020, 2, 23, 19, 41, 51), 'last_modified_date': datetime.datetime(2020, 2, 23, 19, 41, 51), 
+                'draft': 0, 'user_id': 'testuser', 'tags': ['COMMA', 'SEPARATED', 'TAGS']}, 
+{'post_id': 2, 'title': 'Office Hours', 'text': '6-7 in ryerson 60 9  ', 
+                'post_date': datetime.datetime(2020, 1, 25, 17, 49, 56), 'last_modified_date': datetime.datetime(2020, 1, 25, 17, 49, 56), 
+                'draft': 0, 'user_id': 'testuser', 'tags': ['DSAFDSF']}]
+
+posts is a list of dicts, fields are:
+post_id, title, text, post_date, last_modified_date, draft, user_id, testuser, tags
+ """
+
+def read_posts(storage, path):
+    posts = storage.get_posts() #gets the last 10 posts as a list of dicts
+
+    blog_posts = {} # (title, dict)
+    
+    for p in posts:
+        p['post_year'] = str(p['post_date'].year)
+        p['post_month'] = str(p['post_date'].month)
+        p['post_day'] = str(p['post_date'].day)
+        p['last_mod_year'] = str(p['last_modified_date'].year)
+        p['last_mod_month'] = str(p['last_modified_date'].month)
+        p['last_mod_day'] = str(p['last_modified_date'].day)
+        try:
+            del p['post_date']
+            del p['last_modified_date']
+        except Exception as e:
+            pass
+
+        blog_posts[p['title'].replace(' ','_')] = p
+
+    with open(path, mode='w') as f:
+        #print(str(blog_posts).strip('"\''), file=f)
+        json.dump(blog_posts, f)
+
+    return
 
 ###############################################################
 ########################## END BLOG ###########################
 ###############################################################
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000, use_reloader=True)
+    path = "../shevotesillinois/src/assets/blog_posts.json"
+    read_posts(sql_storage, path)
+    #app.run(debug=True, port=8000, use_reloader=True)
